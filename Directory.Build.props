@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)assets/seeds/engine-1.4.5.8.json" LogicalName="MapStudio.NativeSeedCatalog.json" />
+  </ItemGroup>
+</Project>

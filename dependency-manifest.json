@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "engineSource": "User-supplied local UnifierTSL build output; see docs/DEPENDENCIES.md",
+  "teditSource": "User-supplied local TEdit build with PreserveBorderBrickStyles; see docs/DEPENDENCIES.md",
+  "engine": [
+    {
+      "path": "engine/GetText.dll",
+      "bytes": 45568,
+      "sha256": "5B558AA4C4BADF4E7816412CF0995FECDEA1A9FEB889727BE6B50B83F7718AE7"
+    },
+    {
+      "path": "engine/linq2db.dll",
+      "bytes": 4481024,
+      "sha256": "52449B7484002E6483F9F99C6E622CF98E8456A8B19B84235017B9F69EC26364"
+    },
+    {
+      "path": "engine/MemoryPack.Core.dll",
+      "bytes": 210432,
+      "sha256": "6DC7785EEA92DC72B9EA4D9D9B08C585CE87C11EC6B8388D00A179AF694CF6BE"
+    },
+    {
+      "path": "engine/Microsoft.Data.Sqlite.dll",
+      "bytes": 174632,
+      "sha256": "86831B3786D98D7629C80FAEAACF3BDC8CAAB18F18B2EB2905AADE667127578C"
+    },
+    {
+      "path": "engine/ModFramework.dll",
+      "bytes": 119808,
+      "sha256": "19B0B06DD5E3FB0B4E0ECE16AE0BA47CCC82452E5DA5912193EE356F4E314525"
+    },
+    {
+      "path": "engine/Mono.Cecil.dll",
+      "bytes": 359424,
+      "sha256": "9C2908709DA6761E9B5B9D4D46102D65851145BAC987787D6C5A05FFE5689487"
+    },
+    {
+      "path": "engine/Mono.Cecil.Mdb.dll",
+      "bytes": 39424,
+      "sha256": "2BDA97FC302904BF235D631E698A0C81324872DFAD2A38E63EF66389155BFCF4"
+    },
+    {
+      "path": "engine/Mono.Cecil.Pdb.dll",
+      "bytes": 89600,
+      "sha256": "333397769114FFD13046A25B9CFFFD41C44A3450EA9EA1FD13B76EEC28E1A815"
+    },
+    {
+      "path": "engine/Mono.Cecil.Rocks.dll",
+      "bytes": 26624,
+      "sha256": "A6D3E6EAB8D89DBD6FCF34268A08A6544EA142B6BCC5F665BEE62317786B7892"
+    },
+    {
+      "path": "engine/MonoMod.Backports.dll",
+      "bytes": 27648,
+      "sha256": "AC3F32BFD44AAB83ABF71ABDFF6DDE548D57B7C0F8A1FE6D8964E348B4EEAFB1"
+    },
+    {
+      "path": "engine/MonoMod.Core.dll",
+      "bytes": 228864,
+      "sha256": "CBA0030183202AA1641E8FB7BCBD32C558766C700C2949B370E9542E7A855F50"
+    },
+    {
+      "path": "engine/MonoMod.dll",
+      "bytes": 68096,
+      "sha256": "CFA83184F0CC98CCDA1475CD5A62EE83226D0BA63E03B058DBD9EC9A7E40DEF0"
+    },
+    {
+      "path": "engine/MonoMod.Iced.dll",
+      "bytes": 645120,
+      "sha256": "2B94C3938B3C2F6894594A19FD880EFFE33681DABCF4107DD0EF67D6E99D44ED"
+    },
+    {
+      "path": "engine/MonoMod.ILHelpers.dll",
+      "bytes": 4096,
+      "sha256": "FDD0E3538340FD78B8F521E62B8CAC1EBB7683AC1F27F6AAEDFC1044B14BF4BB"
+    },
+    {
+      "path": "engine/MonoMod.RuntimeDetour.dll",
+      "bytes": 72704,
+      "sha256": "F0A35D4C7F727B8C4C2B0A1C1F6A8BA8C87F436DE9C8B58853B5090ECF4B7338"
+    },
+    {
+      "path": "engine/MonoMod.RuntimeDetour.HookGen.dll",
+      "bytes": 25088,
+      "sha256": "FB61A5F12FD643D327CE4A10C7A74BE52F8A349795AEB7BAC9AD1BA7A8504CB9"
+    },
+    {
+      "path": "engine/MonoMod.Utils.dll",
+      "bytes": 336384,
+      "sha256": "871DDDC947F8C6FBCFB1C13C0249FD3D186FE26F4F98392AFBE5A6C101C8B71D"
+    },
+    {
+      "path": "engine/Newtonsoft.Json.dll",
+      "bytes": 712464,
+      "sha256": "22C649F75FCE5BE7C7CCDA8880473B634EF69ECF33F5D1AB8AD892CAF47D5A07"
+    },
+    {
+      "path": "engine/NuGet.Common.dll",
+      "bytes": 109640,
+      "sha256": "47425206FE13534F2C7679D42428D16C5F3EE07705135F2A7D612B400E8A30A5"
+    },
+    {
+      "path": "engine/NuGet.Configuration.dll",
+      "bytes": 175664,
+      "sha256": "690824E920106FB468A22E5F7D8CAD9C3E5AD0C5EB0E314FFEB08D01948875BA"
+    },
+    {
+      "path": "engine/NuGet.Frameworks.dll",
+      "bytes": 124448,
+      "sha256": "88232838A9FFFCBE273D821CF2DE8E30448B19CCACA0251C5F7EF68947FD225C"
+    },
+    {
+      "path": "engine/NuGet.Packaging.dll",
+      "bytes": 705568,
+      "sha256": "E78034CB685D6AEAF04A75BFCB354511EF6BCBE697312D3A13C8B1EAA9FA22D5"
+    },
+    {
+      "path": "engine/NuGet.Protocol.dll",
+      "bytes": 791096,
+      "sha256": "1B4C557101B0106AF19275F12396D86A9654065F80C01B8B7B5155D497999C70"
+    },
+    {
+      "path": "engine/NuGet.Versioning.dll",
+      "bytes": 64568,
+      "sha256": "1D5169F42A93615244292CDDA06C554BE7CBB8C1033DEE15A584A3F4ECEA19D4"
+    },
+    {
+      "path": "engine/OTAPI.dll",
+      "bytes": 30047744,
+      "sha256": "60C43A2AACC46844A32EF63672DFFA8BF827A754E69A0C87BA1188793B00777F"
+    },
+    {
+      "path": "engine/OTAPI.Runtime.dll",
+      "bytes": 30151168,
+      "sha256": "00AC2C82930A8F4DEAC64158F90460C08F6D03C963B300EBDF1155ABD7D4B588"
+    },
+    {
+      "path": "engine/SQLitePCLRaw.batteries_v2.dll",
+      "bytes": 5120,
+      "sha256": "0981B1E1E24DDF18E42D0F6CEA7A318E735B875F987B3E306F555118726B24A7"
+    },
+    {
+      "path": "engine/SQLitePCLRaw.core.dll",
+      "bytes": 51200,
+      "sha256": "DBCFD04E95AEFA9EF0DCAD4CD20009B018DD3D2943C8CCF3F40597B9ED9161B8"
+    },
+    {
+      "path": "engine/SQLitePCLRaw.provider.e_sqlite3.dll",
+      "bytes": 36864,
+      "sha256": "30DD6AE7899281F9B715AB9F8CEB1D67B6D4C8D76A21DAAAFC215955FCF37F0C"
+    },
+    {
+      "path": "engine/Steamworks.NET.dll",
+      "bytes": 314368,
+      "sha256": "316A154E7111A052A4C2492B3CD9E302D24DDB2AC33B0141FA8C17C62206A3B2"
+    },
+    {
+      "path": "engine/System.IO.Packaging.dll",
+      "bytes": 159536,
+      "sha256": "53768DD79C0F13B5D8A5631D18332455A1FC85EC36D070AE56F8AFD80B00647E"
+    },
+    {
+      "path": "engine/System.Security.Cryptography.Pkcs.dll",
+      "bytes": 250488,
+      "sha256": "27BB35F75077AA22A5FA96354859F065C7A6FC7DE3E5C7E47966480F533C3896"
+    },
+    {
+      "path": "engine/System.Security.Cryptography.ProtectedData.dll",
+      "bytes": 24880,
+      "sha256": "81A0385CF1FED22F3153789D4AE1FEE75719F23E72CD543EDBA1AF48926FBF24"
+    },
+    {
+      "path": "engine/Tomlyn.dll",
+      "bytes": 138752,
+      "sha256": "7CB44FC1961EBD1687CA85588C9EBA559DB71ED86AC3B637A95C225BB523703C"
+    },
+    {
+      "path": "engine/UnifierTSL.ConsoleClient.dll",
+      "bytes": 448000,
+      "sha256": "A43972EB27629E7B863EE7FE27AB5C0B907F06EFA37AE13891F4C2573DDCB817"
+    },
+    {
+      "path": "engine/UnifierTSL.dll",
+      "bytes": 1504768,
+      "sha256": "CE949F2100110A3F134519CCB445B23F832A2509F354E7B7B71794F6668A999D"
+    }
+  ],
+  "tedit": [
+    {
+      "path": "lib/TEdit/ColorMinePortable.dll",
+      "bytes": 263168,
+      "sha256": "426E8F84FD9FD2FB0A4C97A6443FC62EE859478AF097B3850F700EF23D06123C"
+    },
+    {
+      "path": "lib/TEdit/Newtonsoft.Json.dll",
+      "bytes": 723368,
+      "sha256": "A28C251DFE36D881E9E2462E171441B8B0EC156FE3F452602C9149B1B9EFE05B"
+    },
+    {
+      "path": "lib/TEdit/PropertyModels.dll",
+      "bytes": 65536,
+      "sha256": "088A11B328C8F99195292C525020876160F7032D09675D4A538192E611B077F6"
+    },
+    {
+      "path": "lib/TEdit/ReactiveUI.Core.dll",
+      "bytes": 140288,
+      "sha256": "B09AB5EC416189F4A1E1638EE2EE2AD6D9F1849EE8B9052425A723B8ADC4BAEE"
+    },
+    {
+      "path": "lib/TEdit/ReactiveUI.Disposables.dll",
+      "bytes": 32256,
+      "sha256": "2BAEA2744817CAFF3A045A04335F6B6BD553372542F4CBC6553D78ACCB7A47E0"
+    },
+    {
+      "path": "lib/TEdit/ReactiveUI.dll",
+      "bytes": 688128,
+      "sha256": "DE10A393B9E89B42E15717FAC0CB1DF2FE832CE2D5E6947A2AB7030589F0D9F1"
+    },
+    {
+      "path": "lib/TEdit/ReactiveUI.Primitives.Core.dll",
+      "bytes": 289280,
+      "sha256": "D3365B1312AF26CA5332C3D16320DA556ABEB76D75BA24813F40DAC1DA3EF96D"
+    },
+    {
+      "path": "lib/TEdit/ReactiveUI.Primitives.dll",
+      "bytes": 686592,
+      "sha256": "6C9874D0A7E17EEE89A5A799CEC7A4930FF86F6FE08FD7F70E1DB7E466450EAA"
+    },
+    {
+      "path": "lib/TEdit/Splat.Builder.dll",
+      "bytes": 17920,
+      "sha256": "D66131FCF8CD0C6AB6496C76B99EAE5545F62EEF73640064B82B78A94FE0C760"
+    },
+    {
+      "path": "lib/TEdit/Splat.Core.dll",
+      "bytes": 95744,
+      "sha256": "F9B19D9A9E2BAF1143C5D1B115AC8B82D8CCC16818118FCF35DE0376B6A17C28"
+    },
+    {
+      "path": "lib/TEdit/Splat.dll",
+      "bytes": 54784,
+      "sha256": "D4AB65E35E9D300E1FB78CDE20E6589B860B9E86D21B57D634FE7749A4C23FFC"
+    },
+    {
+      "path": "lib/TEdit/Splat.Logging.dll",
+      "bytes": 99328,
+      "sha256": "CEFFD17CE6A269FE3B3C80D0CADD4D7796B8A9FC6CA6524B2ED7A68EAFC2CA2F"
+    },
+    {
+      "path": "lib/TEdit/System.Reactive.dll",
+      "bytes": 1387984,
+      "sha256": "E8070137FC07EFEB8FD00E1607A096C7718EE1814C6B2032E4CB865F5CF042A9"
+    },
+    {
+      "path": "lib/TEdit/TEdit.Common.dll",
+      "bytes": 124416,
+      "sha256": "E92EF2882A1C232EBB4E98ADFFA723D00402374B9F9EDD6A0F03E269470AEC8E"
+    },
+    {
+      "path": "lib/TEdit/TEdit.Terraria.dll",
+      "bytes": 8019968,
+      "sha256": "CD469BED498A6260E8617846653CBF298FA38B03DD2F788BE7E30BCBB039AA4D"
+    }
+  ],
+  "productionTouched": false
+}

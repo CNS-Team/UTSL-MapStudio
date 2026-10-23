@@ -1,0 +1,85 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="using:MapStudio"
+        x:Class="MapStudio.StudioWindow" Title="UTSL地图生成器" Icon="avares://UTSL.MapStudio/Assets/MapStudio.ico" Width="1480" Height="980" MinWidth="1100" MinHeight="760"
+        WindowStartupLocation="CenterScreen" WindowDecorations="None" Background="#10151D" CanResize="True">
+  <Border BorderBrush="#30394A" BorderThickness="1" CornerRadius="12" ClipToBounds="True">
+    <Grid RowDefinitions="48,Auto,Auto,*,Auto,28">
+      <Border Grid.Row="0" Background="#1B202A" PointerPressed="DragWindow">
+        <Grid ColumnDefinitions="120,*,220" Margin="20,0">
+          <StackPanel Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+            <Button x:Name="CloseButton" Classes="traffic" Background="#FF6058" ToolTip.Tip="关闭" Click="CloseClick"/>
+            <Button Classes="traffic" Background="#FEBC2E" ToolTip.Tip="最小化" Click="MinimizeClick"/>
+            <Button Classes="traffic" Background="#28C840" ToolTip.Tip="最大化 / 还原" Click="MaximizeClick"/>
+          </StackPanel>
+          <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10" HorizontalAlignment="Center" VerticalAlignment="Center"><Image x:Name="BrandImage" Width="26" Height="26" Source="avares://UTSL.MapStudio/Assets/MapStudio.png"/><TextBlock Text="UTSL地图生成器" FontWeight="SemiBold" VerticalAlignment="Center"/></StackPanel>
+          <TextBlock Grid.Column="2" Text="流光工作室" Foreground="#7CCCA8" FontSize="11" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </Grid>
+      </Border>
+      <Border Grid.Row="1" Background="#181E28" BorderBrush="#2A3443" BorderThickness="0,0,0,1" Padding="16,8">
+        <Grid ColumnDefinitions="*,Auto">
+          <Menu Background="Transparent" VerticalAlignment="Center">
+            <MenuItem Header="文件"><MenuItem Header="新建地图项目" Click="NewClick"/><MenuItem Header="导入连续母图…" Click="ImportClick"/><MenuItem Header="打开地图文件夹" Click="MapsClick"/></MenuItem>
+            <MenuItem Header="世界设置"><MenuItem Header="显示 / 收起参数" Click="SettingsClick"/><MenuItem Header="种子特性合集…" Click="SeedsClick"/><MenuItem Header="参数说明…" Click="ParametersClick"/><Separator/><MenuItem Header="连续母图模式" Click="ContinuousClick"/><MenuItem Header="独立标准三世界" Click="NormalClick"/></MenuItem>
+            <MenuItem Header="预览"><MenuItem Header="全景适应窗口" Click="FitClick"/><MenuItem Header="放大" Click="ZoomInClick"/><MenuItem Header="缩小" Click="ZoomOutClick"/><MenuItem Header="显示 / 隐藏日志" Click="LogsClick"/></MenuItem>
+            <MenuItem Header="关于"><MenuItem Header="UTSL地图生成器" Click="AboutClick"/></MenuItem>
+          </Menu>
+          <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="9">
+            <Button Content="地图文件夹" Click="MapsClick"/>
+            <Button Content="运行日志" Click="LogsClick"/>
+            <Button x:Name="CancelButton" Content="取消" IsEnabled="False" Click="CancelClick"/>
+            <Button x:Name="GenerateButton" Classes="primary" Content="开始生成  →" MinWidth="130" Click="GenerateClick"/>
+          </StackPanel>
+        </Grid>
+      </Border>
+      <Border x:Name="SettingsPanel" Grid.Row="2" Margin="22,16,22,12" Padding="18,14" Background="#1B222D" CornerRadius="10" BorderBrush="#303B4C" BorderThickness="1">
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto" RowSpacing="12">
+          <Grid ColumnDefinitions="1.1*,1.1*,1.3*,1.5*" ColumnSpacing="16">
+            <StackPanel><TextBlock Classes="caption" Text="中间世界名称"/><TextBox x:Name="WorldName" Text="泰拉大陆"/></StackPanel>
+            <StackPanel Grid.Column="1"><TextBlock Classes="caption" Text="生成种子 / 特殊种子码"/><TextBox x:Name="Seed" Text="20261023"/></StackPanel>
+            <StackPanel Grid.Column="2"><TextBlock Classes="caption" Text="地图样式"/><ComboBox x:Name="StyleChoice"/></StackPanel>
+            <StackPanel Grid.Column="3"><TextBlock Classes="caption" Text="三图生成方式"/><ComboBox x:Name="LayoutChoice"/></StackPanel>
+          </Grid>
+          <Grid Grid.Row="1" ColumnDefinitions="1.1*,1.1*,1.3*,1.5*" ColumnSpacing="16">
+            <StackPanel><TextBlock Classes="caption" Text="每片尺寸"/><ComboBox x:Name="SizeChoice"/></StackPanel>
+            <StackPanel Grid.Column="1"><TextBlock Classes="caption" Text="世界难度"/><ComboBox x:Name="DifficultyChoice"/></StackPanel>
+            <StackPanel Grid.Column="2"><TextBlock Classes="caption" Text="特殊种子与组合特性"/><Button x:Name="SeedsButton" Content="种子特性合集…" Click="SeedsClick" HorizontalAlignment="Stretch" MinHeight="35" ToolTip.Tip="9种原生特殊种子、37项引擎特性，可组合并查看逐项说明。"/></StackPanel>
+            <StackPanel Grid.Column="3"><TextBlock Classes="caption" Text="实时采样间隔"/><ComboBox x:Name="RefreshChoice"/></StackPanel>
+          </Grid>
+          <Expander x:Name="FoundationExpander" Grid.Row="2" Header="基础环境补全" IsExpanded="False" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+            <StackPanel Spacing="10" Margin="0,10,0,2">
+              <Grid ColumnDefinitions="240,*" ColumnSpacing="20"><ComboBox x:Name="FoundationChoice"/><TextBlock Grid.Column="1" Classes="muted" Text="补足原生地牢、神庙与生态；保持纯原生可避免补全改变所选种子特性。" TextWrapping="Wrap" VerticalAlignment="Center"/></Grid>
+              <WrapPanel x:Name="FeatureChecks" Orientation="Horizontal"/>
+            </StackPanel>
+          </Expander>
+          <Grid Grid.Row="3" ColumnDefinitions="*,Auto,Auto" ColumnSpacing="10">
+            <TextBox x:Name="OutputPath" PlaceholderText="地图输出路径" ToolTip.Tip="默认输出在程序根目录的地图文件夹；每批必须使用新的空目录"/>
+            <Button Grid.Column="1" Content="选择位置" Click="OutputClick"/>
+            <Button Grid.Column="2" x:Name="ImportButton" Content="导入母图…" Click="ImportClick"/>
+          </Grid>
+        </Grid>
+      </Border>
+      <Grid Grid.Row="3" RowDefinitions="Auto,*,Auto" Margin="22,0,22,12">
+        <Grid ColumnDefinitions="*,Auto" Margin="0,4,0,12">
+          <StackPanel Orientation="Horizontal" Spacing="14" VerticalAlignment="Center"><TextBlock Text="实时地图全景" FontSize="17" FontWeight="SemiBold"/><TextBlock x:Name="ModeHint" Classes="muted" Text="1 西  ↔  2 中（默认） ↔  3 东" VerticalAlignment="Center"/></StackPanel>
+          <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="12">
+            <CheckBox x:Name="LiveCheck" Content="实时预览" IsChecked="True"/>
+            <CheckBox x:Name="SeamsCheck" Content="接缝标记" IsChecked="True"/>
+            <Button Content="−" Click="ZoomOutClick" Padding="11,4"/><Button Content="+" Click="ZoomInClick" Padding="11,4"/><Button Content="全景" Click="FitClick" Padding="11,4"/>
+          </StackPanel>
+        </Grid>
+        <Border Grid.Row="1" Background="#131B27" BorderBrush="#2C384B" BorderThickness="1" CornerRadius="10" ClipToBounds="True"><local:LiveMap x:Name="MapView"/></Border>
+        <StackPanel Grid.Row="2" Spacing="7" Margin="0,12,0,0">
+          <Grid ColumnDefinitions="*,Auto"><TextBlock x:Name="StatusText" Text="就绪 · 选择种子，开始构建你的下一片世界" Foreground="#A8C4FF"/><TextBlock x:Name="ProgressText" Grid.Column="1" Classes="muted" Text="离线生成 / 不连接服务器"/></Grid>
+          <ProgressBar x:Name="NativeProgress" Minimum="0" Maximum="100" Height="4" Foreground="#78A4FF" Background="#273245"/>
+          <TextBlock x:Name="FrameText" Classes="muted" Text="等待真实图格采样 · 下方显示实际生成内容，非进度动画" FontSize="11"/>
+        </StackPanel>
+      </Grid>
+      <Border x:Name="LogPanel" Grid.Row="4" IsVisible="False" Margin="22,0,22,10" Padding="10" Height="140" Background="#0E131C" BorderBrush="#2C384B" BorderThickness="1" CornerRadius="8">
+        <TextBox x:Name="LogText" IsReadOnly="True" AcceptsReturn="True" TextWrapping="NoWrap" FontFamily="Consolas" FontSize="11" Background="Transparent" BorderThickness="0" Foreground="#9BAEC8"/>
+      </Border>
+      <Grid Grid.Row="5" Background="#191F29" ColumnDefinitions="*,Auto" Margin="0">
+        <TextBlock x:Name="FooterText" Margin="22,0" VerticalAlignment="Center" Text="滚轮缩放 · 拖动地图 · 双击适应窗口" FontSize="10" Foreground="#8595AE"/>
+        <TextBlock Grid.Column="1" Margin="22,0" VerticalAlignment="Center" Text="© 流光-Pigeon-X  ·  流光工作室" FontSize="10" Foreground="#8C9BB1"/>
+      </Grid>
+    </Grid>
+  </Border>
+</Window>

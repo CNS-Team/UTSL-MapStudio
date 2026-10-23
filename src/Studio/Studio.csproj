@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../Branding.props" />
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><AssemblyName>UTSL.MapStudio</AssemblyName>
+    <Version>2.0.0</Version><Deterministic>true</Deterministic><ApplicationManifest>app.manifest</ApplicationManifest>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="12.1.2" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.1.2" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.2" />
+  </ItemGroup>
+  <ItemGroup><Compile Include="../Shared/*.cs" Link="Shared/%(Filename)%(Extension)" /></ItemGroup>
+  <ItemGroup><AvaloniaResource Include="../../assets/branding/MapStudio.ico" Link="Assets/MapStudio.ico" /><AvaloniaResource Include="../../assets/branding/MapStudio.png" Link="Assets/MapStudio.png" /></ItemGroup>
+</Project>

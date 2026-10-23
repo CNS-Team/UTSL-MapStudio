@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../Branding.props" />
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+    <AssemblyName>UTSL.ThreeWorlds</AssemblyName><Deterministic>true</Deterministic>
+    <Version>1.4.0</Version><AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup><Compile Include="../Shared/*.cs" Link="Shared/%(Filename)%(Extension)" /></ItemGroup>
+  <ItemGroup>
+    <Reference Include="TEdit.Terraria"><HintPath>../../lib/TEdit/TEdit.Terraria.dll</HintPath></Reference>
+    <Reference Include="TEdit.Common"><HintPath>../../lib/TEdit/TEdit.Common.dll</HintPath></Reference>
+    <Reference Include="ReactiveUI"><HintPath>../../lib/TEdit/ReactiveUI.dll</HintPath></Reference>
+    <Reference Include="ReactiveUI.Core"><HintPath>../../lib/TEdit/ReactiveUI.Core.dll</HintPath></Reference>
+    <Reference Include="Splat.Builder"><HintPath>../../lib/TEdit/Splat.Builder.dll</HintPath></Reference>
+    <Reference Include="Splat.Core"><HintPath>../../lib/TEdit/Splat.Core.dll</HintPath></Reference>
+    <Reference Include="System.Reactive"><HintPath>../../lib/TEdit/System.Reactive.dll</HintPath></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>../../lib/TEdit/Newtonsoft.Json.dll</HintPath></Reference>
+    <Reference Include="ColorMinePortable"><HintPath>../../lib/TEdit/ColorMinePortable.dll</HintPath></Reference>
+    <Reference Include="PropertyModels"><HintPath>../../lib/TEdit/PropertyModels.dll</HintPath></Reference>
+    <Reference Include="ReactiveUI.Disposables"><HintPath>../../lib/TEdit/ReactiveUI.Disposables.dll</HintPath></Reference>
+    <Reference Include="ReactiveUI.Primitives"><HintPath>../../lib/TEdit/ReactiveUI.Primitives.dll</HintPath></Reference>
+    <Reference Include="ReactiveUI.Primitives.Core"><HintPath>../../lib/TEdit/ReactiveUI.Primitives.Core.dll</HintPath></Reference>
+    <Reference Include="Splat"><HintPath>../../lib/TEdit/Splat.dll</HintPath></Reference>
+    <Reference Include="Splat.Logging"><HintPath>../../lib/TEdit/Splat.Logging.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "1.4.5.8",
+  "engineSha256": "60C43A2AACC46844A32EF63672DFFA8BF827A754E69A0C87BA1188793B00777F",
+  "capturedAt": "2026-10-23T05:05:17.9663455+08:00",
+  "source": "actual bundled OTAPI / world instance, not web guesses",
+  "networkStarted": false,
+  "pluginsLoaded": false,
+  "nativeSeeds": [
+    {
+      "id": "drunk",
+      "title": "一醉方休",
+      "description": "猩红加上腐化？二者一起出现？唯有疯狂。在这片大陆上，世界创生陷入疯狂境地，带来了一场绝无仅有的泰拉瑞亚冒险！回家吧，WorldGen，你喝醉了！",
+      "aliases": [],
+      "numericAliases": [
+        5162020
+      ]
+    },
+    {
+      "id": "notthebees",
+      "title": "蜜蜂之惧",
+      "description": "进入一片弥漫着甜腻蜂香的大陆，在这里嗡嗡振翅声和有毒蛰刺的威胁潜伏在每一个角落！（不包括柳条头盔）",
+      "aliases": [
+        "notthebees"
+      ],
+      "numericAliases": []
+    },
+    {
+      "id": "fortheworthy",
+      "title": "勇者之境",
+      "description": "你够格吗？这是一个毫不留情的世界。忘掉过去的一切，磨炼你的本领，否则等待你的只有审视、衡量与淘汰……",
+      "aliases": [
+        "fortheworthy"
+      ],
+      "numericAliases": []
+    },
+    {
+      "id": "celebration",
+      "title": "十年庆典",
+      "description": "泰拉瑞亚十周年！在这个多姿多彩的奇幻世界中一起庆祝——谁知道呢，也许团队留下了一些礼物等你拆开。",
+      "aliases": [
+        "celebrationmk10"
+      ],
+      "numericAliases": [
+        5162021,
+        5162011
+      ]
+    },
+    {
+      "id": "theconstant",
+      "title": "恒常之地",
+      "description": "将《饥荒》冒险融入到泰拉瑞亚中，你能否在战胜持续饥饿的同时找到泰拉瑞亚的拯救之道？哦，还有别忘了待在光明处！",
+      "aliases": [
+        "constant",
+        "theconstant",
+        "eye4aneye",
+        "eyeforaneye"
+      ],
+      "numericAliases": []
+    },
+    {
+      "id": "remix",
+      "title": "再混合",
+      "description": "一片上下颠倒的大陆。在这场乾坤倒转的冒险中让泰拉瑞亚发生翻天覆地的变化。你是否有足够的勇气去探索上界？",
+      "aliases": [
+        "dontdigup"
+      ],
+      "numericAliases": []
+    },
+    {
+      "id": "notraps",
+      "title": "无机关",
+      "description": "哇哦，陷阱。你讨厌它们，对吧？我也讨厌！这个世界肯定已经清除了所有陷阱……大概吧。也许。",
+      "aliases": [
+        "notraps"
+      ],
+      "numericAliases": []
+    },
+    {
+      "id": "zenith",
+      "title": "天顶剑",
+      "description": "《勇者之境》还不够？所有其他世界种子的主要特色，再加上一些全新的意外因素，这个世界只为击垮你而存在。准备受死吧，伙计！",
+      "aliases": [
+        "getfixedboi"
+      ],
+      "numericAliases": []
+    },
+    {
+      "id": "skyblock",
+      "title": "天空之岛",
+      "description": "踏入这片悬浮于天际的领域。初始资源微薄，你需白手起家，逐步构建属于你的世界。",
+      "aliases": [
+        "skyblock"
+      ],
+      "numericAliases": []
+    }
+  ],
+  "traits": [
+    {
+      "id": "paintEverythingGray",
+      "description": "回到那个更简单的时代，摆脱那些烦人的颜色！（世界被涂成灰色）",
+      "localization": "SecretSeedDescription.paintEverythingGray"
+    },
+    {
+      "id": "paintEverythingNegative",
+      "description": "算了，反过来吧。（世界被涂成反色）",
+      "localization": "SecretSeedDescription.paintEverythingNegative"
+    },
+    {
+      "id": "coatEverythingEcho",
+      "description": "明明就在眼前，却无人察觉。（世界覆上了回声涂层）",
+      "localization": "SecretSeedDescription.coatEverythingEcho"
+    },
+    {
+      "id": "coatEverythingIlluminant",
+      "description": "这里怎么这么亮？（世界覆上了发光涂层）",
+      "localization": "SecretSeedDescription.coatEverythingIlluminant"
+    },
+    {
+      "id": "noSurface",
+      "description": "地表什么的，过誉了……（世界没有地表层）",
+      "localization": "SecretSeedDescription.noSurface"
+    },
+    {
+      "id": "extraLivingTrees",
+      "description": "还有什么比一棵快乐小树更棒的呢？一大片巨大的生命树！（世界拥有更多、更大的生命树）",
+      "localization": "SecretSeedDescription.extraLivingTrees"
+    },
+    {
+      "id": "extraFloatingIslands",
+      "description": "你总是爱做白日梦，想入云端。（世界拥有更多漂浮岛）",
+      "localization": "SecretSeedDescription.extraFloatingIslands"
+    },
+    {
+      "id": "errorWorld",
+      "description": "猫狗和平共处，大家集体发疯！（错误世界）",
+      "localization": "SecretSeedDescription.errorWorld"
+    },
+    {
+      "id": "graveyardBloodmoonStart",
+      "description": "克拉图·维拉塔……领带！（世界遍布墓地，开局即为血月）",
+      "localization": "SecretSeedDescription.graveyardBloodmoonStart"
+    },
+    {
+      "id": "surfaceIsInSpace",
+      "description": "在太空，没人能听到你的尖叫。（地表层位置更高）",
+      "localization": "SecretSeedDescription.surfaceIsInSpace"
+    },
+    {
+      "id": "rainsForAYear",
+      "description": "你恐怕需要一艘更大的船。（世界永无休止地下着雨）",
+      "localization": "SecretSeedDescription.rainsForAYear"
+    },
+    {
+      "id": "biggerAbandonedHouses",
+      "description": "是哪个失落的文明建造了这一切？（世界拥有更大的地下小屋）",
+      "localization": "SecretSeedDescription.biggerAbandonedHouses"
+    },
+    {
+      "id": "randomSpawn",
+      "description": "我们到底在哪儿？（初始生成点随机）",
+      "localization": "SecretSeedDescription.randomSpawn"
+    },
+    {
+      "id": "addTeleporters",
+      "description": "走路是弱者的行为。（世界各地散布着传送器）",
+      "localization": "SecretSeedDescription.addTeleporters"
+    },
+    {
+      "id": "startInHardmode",
+      "description": "看来，你选择了痛苦之路……（世界开局即为困难模式）",
+      "localization": "SecretSeedDescription.startInHardmode"
+    },
+    {
+      "id": "noInfection",
+      "description": "终于，我们找到了解药！（世界开局没有腐化或猩红）",
+      "localization": "SecretSeedDescription.noInfection"
+    },
+    {
+      "id": "hallowOnTheSurface",
+      "description": "彩虹、小猫和死亡。（世界拥有神圣地表）",
+      "localization": "SecretSeedDescription.hallowOnTheSurface"
+    },
+    {
+      "id": "worldIsInfected",
+      "description": "伙计，我们现在可真是摊上大麻烦了！（整个世界被腐化或猩红侵蚀）",
+      "localization": "SecretSeedDescription.worldIsInfected"
+    },
+    {
+      "id": "surfaceIsMushrooms",
+      "description": "听说松露人是个很有趣的“菌”子。（世界拥有蘑菇地表）",
+      "localization": "SecretSeedDescription.surfaceIsMushrooms"
+    },
+    {
+      "id": "surfaceIsDesert",
+      "description": "就像海滩，但水少得多。（世界拥有沙漠地表）",
+      "localization": "SecretSeedDescription.surfaceIsDesert"
+    },
+    {
+      "id": "pooEverywhere",
+      "description": "6号过道需要清理！（世界遍布粪便块）",
+      "localization": "SecretSeedDescription.pooEverywhere"
+    },
+    {
+      "id": "noSpiderCaves",
+      "description": "八条腿实在太多了。（世界没有蜘蛛洞）",
+      "localization": "SecretSeedDescription.noSpiderCaves"
+    },
+    {
+      "id": "actuallyNoTraps",
+      "description": "不，说真的。这次我们是认真的，保证！（世界没有陷阱）",
+      "localization": "SecretSeedDescription.actuallyNoTraps"
+    },
+    {
+      "id": "rainbowStuff",
+      "description": "红橙黄绿蓝靛紫到此一游。（世界包含各类彩虹方块及更多内容）",
+      "localization": "SecretSeedDescription.rainbowStuff"
+    },
+    {
+      "id": "digExtraHoles",
+      "description": "小心脚下！（世界有额外的裂缝和深坑）",
+      "localization": "SecretSeedDescription.digExtraHoles"
+    },
+    {
+      "id": "roundLandmasses",
+      "description": "哎呀，它们看起来就像一颗颗星球宝宝！（世界由小型星体组成）",
+      "localization": "SecretSeedDescription.roundLandmasses"
+    },
+    {
+      "id": "extraLiquid",
+      "description": "寻找亚特兰蒂斯之旅开始了！（世界被水淹没）",
+      "localization": "SecretSeedDescription.extraLiquid"
+    },
+    {
+      "id": "portalGunInChests",
+      "description": "测试结果出来了：“你是个糟糕的人。”（传送枪可在任意宝箱中生成）",
+      "localization": "SecretSeedDescription.portalGunInChests"
+    },
+    {
+      "id": "worldIsFrozen",
+      "description": "有些人总想逆坡滑冰……（世界由冰雪组成）",
+      "localization": "SecretSeedDescription.worldIsFrozen"
+    },
+    {
+      "id": "halloweenGen",
+      "description": "现在就差个玉米迷宫了。（世界开局自带南瓜）",
+      "localization": "SecretSeedDescription.halloweenGen"
+    },
+    {
+      "id": "endlessHalloween",
+      "description": "不给糖就捣蛋！（万圣节事件始终开启）",
+      "localization": "SecretSeedDescription.endlessHalloween"
+    },
+    {
+      "id": "endlessChristmas",
+      "description": "看看树下有什么……（圣诞节事件始终开启）",
+      "localization": "SecretSeedDescription.endlessChristmas"
+    },
+    {
+      "id": "vampirism",
+      "description": "你需要一支SPF9000的防晒霜。（玩家是吸血鬼——不惜一切代价避开阳光）",
+      "localization": "SecretSeedDescription.vampirism"
+    },
+    {
+      "id": "teamBasedSpawns",
+      "description": "离我们的地盘远点！（玩家生成点按队伍颜色区分）",
+      "localization": "SecretSeedDescription.teamBasedSpawns"
+    },
+    {
+      "id": "dualDungeons",
+      "description": "买一送一，地牢大放送！（双地牢探索体验）",
+      "localization": "SecretSeedDescription.dualDungeons"
+    },
+    {
+      "id": "moreLightning",
+      "description": "宙斯不悦（更多雷击）",
+      "localization": "SecretSeedDescription.moreLightning"
+    },
+    {
+      "id": "noLightning",
+      "description": "宙斯息怒了（禁用雷击）",
+      "localization": "SecretSeedDescription.noLightning"
+    }
+  ]
+}

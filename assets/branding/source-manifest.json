@@ -1,0 +1,17 @@
+[
+  {
+    "Path": "assets/branding/icon-source.png",
+    "Bytes": 338955,
+    "SHA256": "AC173AE342FA85EDDC11FA231F310D646DDB1F120EB988A71D0F1362DD9D4F6D"
+  },
+  {
+    "Path": "assets/branding/MapStudio.png",
+    "Bytes": 477407,
+    "SHA256": "DE612A68128E4E6E8376A092840F11DC895E9B3B4A3A2A8A063D8109FAECB65A"
+  },
+  {
+    "Path": "assets/branding/MapStudio.ico",
+    "Bytes": 237261,
+    "SHA256": "EF88AE349FE3431F5C45258606CC1E2BED5DDC58D9C56E2E590DA3482481A479"
+  }
+]

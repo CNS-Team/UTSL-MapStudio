@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <Title>UTSL地图生成器</Title>
+    <AssemblyTitle>UTSL地图生成器</AssemblyTitle>
+    <Product>UTSL地图生成器</Product>
+    <Description>UTSL地图生成器</Description>
+    <Company>流光工作室</Company>
+    <Authors>流光-Pigeon-X</Authors>
+    <Copyright>© 流光-Pigeon-X</Copyright>
+    <ApplicationIcon>$(MSBuildThisFileDirectory)assets/branding/MapStudio.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyMetadata Include="DevelopmentTeam" Value="流光工作室" />
+    <AssemblyMetadata Include="Attribution" Value="流光-Pigeon-X" />
+  </ItemGroup>
+</Project>
