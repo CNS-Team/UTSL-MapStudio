@@ -25,7 +25,7 @@ public sealed partial class StudioWindow
         stack.Children.Add(Label("第三方组件保留各自版权与许可证。", 10, true));
         var w = Dialog("关于", 440, 390, stack); w.CanResize = false; return w;
     }
-    async void AboutClick(object? sender, RoutedEventArgs e) => await CreateAboutWindow().ShowDialog(this);
+    async void AboutClick(object? sender, RoutedEventArgs e) => await CreateAboutWindow().ShowDialog(DialogOwner);
     static readonly (string Title, string Text)[] ParameterDescriptions = [
         ("种子与样式", "输入普通种子、原版特殊种子名或完整复制码。地图样式是快捷选择；种子特性合集允许叠加原生特殊种子与细分特性。勾选项与输入种子会合并，不会代替用户种子。"),
         ("种子特性合集", "清单直接采集自随附引擎 1.4.5.8：9种特殊种子、37项特性。中文描述来自该引擎本地化。组合预设是工具配方，不是新的官方种子名。原生选项调用已逐项验证；并非所有组合都已生成地图或通过游戏测试。"),
@@ -43,7 +43,7 @@ public sealed partial class StudioWindow
         foreach (var item in ParameterDescriptions) { var section = new StackPanel { Spacing = 7 }; section.Children.Add(Label(item.Title, 16)); section.Children.Add(Label(item.Text, 12, true)); content.Children.Add(section); }
         return Dialog("功能与参数说明", 760, 700, new ScrollViewer { Content = content });
     }
-    async void ParametersClick(object? sender, RoutedEventArgs e) => await CreateParametersWindow().ShowDialog(this);
+    async void ParametersClick(object? sender, RoutedEventArgs e) => await CreateParametersWindow().ShowDialog(DialogOwner);
     void ConfigureParameterTips()
     {
         ToolTip.SetTip(WorldName, "中间世界名称；左右地图自动添加·西、·东，中间为默认进入世界。");
@@ -57,7 +57,7 @@ public sealed partial class StudioWindow
         ToolTip.SetTip(StyleChoice, StyleCatalog.All[0].Description);
     }
     void UpdateSeedSummary() => SeedsButton.Content = $"种子特性合集…  已选 {nativeSeeds.Length + seedTraits.Length}";
-    async void SeedsClick(object? sender, RoutedEventArgs e) { if (runner == null) await CreateSeedsWindow().ShowDialog(this); }
+    async void SeedsClick(object? sender, RoutedEventArgs e) { if (runner == null) await CreateSeedsWindow().ShowDialog(DialogOwner); }
     Window CreateSeedsWindow()
     {
         var seeds = new Dictionary<string, CheckBox>(); var traits = new Dictionary<string, CheckBox>();

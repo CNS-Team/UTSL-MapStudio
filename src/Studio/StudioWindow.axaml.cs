@@ -15,6 +15,8 @@ public sealed partial class StudioWindow : Window
     readonly DispatcherTimer poll = new() { Interval = TimeSpan.FromMilliseconds(400) };
     Process? runner; string? cancelFile, previewDirectory, source; StudioOptions? active; bool polling, closeAfterCancel;
     int frames; readonly Stopwatch elapsed = new();
+    Window? embeddedOwner;
+    Window DialogOwner => embeddedOwner ?? this;
     string[] nativeSeeds = [], seedTraits = [];
     public StudioWindow()
     {
@@ -159,13 +161,13 @@ public sealed partial class StudioWindow : Window
     async void ImportClick(object? s, RoutedEventArgs e)
     {
         if (runner != null) return;
-        var files = await StorageProvider.OpenFilePickerAsync(new() { Title = "导入连续母图", AllowMultiple = false, FileTypeFilter = [new FilePickerFileType("Terraria 世界") { Patterns = ["*.wld"] }] });
+        var files = await DialogOwner.StorageProvider.OpenFilePickerAsync(new() { Title = "导入连续母图", AllowMultiple = false, FileTypeFilter = [new FilePickerFileType("Terraria 世界") { Patterns = ["*.wld"] }] });
         if (files.Count > 0) { source = files[0].TryGetLocalPath(); ImportButton.Content = "已导入母图"; LayoutChoice.SelectedIndex = 0; Append("母图：" + source); }
     }
     async void OutputClick(object? s, RoutedEventArgs e)
     {
         if (runner != null) return; Directory.CreateDirectory(Program.MapsRoot);
-        var folders = await StorageProvider.OpenFolderPickerAsync(new() { Title = "选择新的空输出文件夹", AllowMultiple = false, SuggestedStartLocation = await StorageProvider.TryGetFolderFromPathAsync(Program.MapsRoot) });
+        var folders = await DialogOwner.StorageProvider.OpenFolderPickerAsync(new() { Title = "选择新的空输出文件夹", AllowMultiple = false, SuggestedStartLocation = await DialogOwner.StorageProvider.TryGetFolderFromPathAsync(Program.MapsRoot) });
         if (folders.Count > 0) OutputPath.Text = folders[0].TryGetLocalPath();
     }
 }
