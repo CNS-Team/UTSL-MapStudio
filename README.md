@@ -4,7 +4,7 @@
 
 面向 UTSL 三联接缝世界的 Windows 桌面地图生成器。Avalonia 暗色界面，实时显示真实图格生成进度；支持特殊种子、基础环境补全和生成后的三联世界长图。
 
-这是独立维护的生成器源码仓库，**不是服务器管理器，也不包含服务器插件发布包**。后续管理器集成以这里的版本为上游，不再复制多个无来源的维护根。
+本项目在 **CNS-Team** 组织下公开、独立维护，维护者为 **Pigeon-X**。这是生成器源码仓库，**不是服务器管理器，也不包含服务器插件发布包**。后续管理器集成以这里的版本为上游，不再复制多个无来源的维护根。
 
 ## 功能
 
@@ -40,7 +40,7 @@ dependency-manifest.json   本地原生引擎 / TEdit 依赖的 bytes / SHA256 �
 完整生成器还需要用户自行提供的本地 UnifierTSL / OTAPI 和 TEdit 精确依赖；**仅克隆仓库不等于已具备完整生成环境**。本仓库不上传或自动下载 Terraria 引擎二进制，也不接受用不匹配 DLL 凑引用。来源边界见 [依赖说明](docs/DEPENDENCIES.md)。
 
 ```powershell
-git clone https://github.com/Pigeon-X/UTSL-MapStudio.git
+git clone https://github.com/CNS-Team/UTSL-MapStudio.git
 cd UTSL-MapStudio
 
 # 按锁校验所有输入后，导入用户已有的合法依赖；不会覆盖不匹配的文件。
